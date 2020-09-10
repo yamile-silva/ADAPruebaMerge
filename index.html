@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Program</title> 
+    <link rel="icon" type="image/jpg" href="/src/Imagenes/icono.png"> 
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!--font CK-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="src/styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-main">
+            <img src="./src/Imagenes/logo.png" alt="Programa logo" class="nav-brand">
+            <ul class="nav-menu">
+                <li class="uni">
+                    <a href="http://www.unmsm.edu.pe/">UNMSM</a>
+                </li>
+                <li>
+                    <a href="#">Repositorio</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/alessandro.valenzuel99/">Redes sociales</a>
+                </li>
+                <li>
+                    <a href="#">Sobre mi</a>
+                </li>
+            </ul>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+        <header class="banner">Programa de ordenamiento</header>
+        <section id="actualizar" class="data-container">
+            <input type="button" value="Actualizar" onclick="location.reload()" class="boton">
+        </section>
+        <div>
+            <form id="variables" class="Dato">
+                <div class="inputs">
+                        <input type="number" id="ta" min="0" pattern="[0-9]+"
+                        placeholder="Cantidad" class="control" >
+                        <input type="number" id="ve" min="0" value="100" pattern="[0-9]+"
+                        placeholder="Velocidad" class="control">
+                        <input type="submit" value="Aceptar" class="boton">
+                </div>
+                <div class="inputs">
+                    <input type="number" id="li" placeholder="Limite inferior" class="control" pattern="[0-9]+">
+                    <input type="number" id="ls" placeholder="Limite superior" class="control" pattern="[0-9]+">
+                </div>
+            </form>
+        </div>
+        <div class="pseudo">
+            Pseudocodigo
+            <section class="codigo">
+                Funcion BubbleSort(Arreglo A[],Entero n) <br>
+                Inicio <br>
+                Entero i=0, j=0 <br>
+                Para i desde 0 hasta n-1 hacer <br>
+                  &nbsp; &nbsp; Para j desde 0 hasta n-1 hacer <br>
+                  &nbsp; &nbsp; &nbsp;  Si (A[j]> A[j+1]) hacer <br>
+                  &nbsp; &nbsp; &nbsp; &nbsp; intercambiar(A[j],A[j+1]) <br>
+                  &nbsp; &nbsp; &nbsp; FinSi <br>
+                  &nbsp; &nbsp; FinPara <br>
+                  FinPara <br>
+                  Fin 
+            </section>
+        </div>
+    </div>
+</body>
+<footer>
+</footer>
+<script src="src/main.js"></script>
+</html>
