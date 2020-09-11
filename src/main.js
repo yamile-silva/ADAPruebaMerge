@@ -18,6 +18,7 @@ function generateBlocks(num, li , ls) {
     block.classList.add("block");
     block.style.height = `${value * 1}px`;
     block.style.transform = `translateX(${i * 25}px)`;
+    block.style.transform = `translateY(${100}px)`;
 
     const blockLabel = document.createElement("label");
     blockLabel.classList.add("block__id");
